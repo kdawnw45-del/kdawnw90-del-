@@ -2,37 +2,104 @@
 <html>
 <head>
     <title>PrimeView Real Estate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Internal CSS -->
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #f4f6f9; /* Not white */
-            text-align: center; /* Centered content */
+            background-color: #eef2f7; /* Not white */
         }
 
-        h1 {
-            color: #1f3c88;
+        header {
+            background-color: #1f3c88;
+            padding: 15px;
+            color: white;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: url("https://via.placeholder.com/1200x400") no-repeat center;
+            background-size: cover;
+            padding: 100px 20px;
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+        }
+
+        .properties {
+            text-align: center;
+            padding: 40px 20px;
         }
 
         .container {
-            width: 250px;
+            width: 280px;
             background-color: white;
             border-radius: 10px;
             margin: 20px;
             display: inline-block;
-            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+            text-align: left;
         }
 
         .container img {
             width: 100%;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
+            border-radius: 10px 10px 0 0;
         }
 
-        .container p {
+        .container .details {
+            padding: 15px;
+        }
+
+        .container button {
+            width: 100%;
             padding: 10px;
+            background-color: #1f3c88;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 0 0 10px 10px;
+        }
+
+        .container button:hover {
+            background-color: #163172;
+        }
+
+        .contact {
+            background-color: #1f3c88;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .contact input, .contact textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #0f2557;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
         }
     </style>
 
@@ -42,43 +109,91 @@
 
 <body>
 
-    <!-- Inline CSS -->
-    <h1 style="margin-top: 20px;">PrimeView Real Estate</h1>
-    <p style="color: #555;">Find Your Dream Home Today</p>
+<header>
+    <h1 style="margin:0;">PrimeView Real Estate</h1> <!-- Inline CSS -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Properties</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
 
-    <div class="main-content">
+<section class="hero" style="text-align:center;"> <!-- Inline CSS -->
+    <h2>Your Dream Home Awaits</h2>
+    <p>Luxury | Comfort | Investment</p>
+</section>
 
-        <!-- Image Container 1 -->
-        <div class="container">
-            <img src="https://via.placeholder.com/250x150" alt="House 1">
-            <p>Luxury Villa - $500,000</p>
+<section class="properties">
+    <h2>Featured Properties</h2>
+
+    <!-- 5 Property Containers -->
+    <div class="container">
+        <img src="https://via.placeholder.com/280x180" alt="Villa">
+        <div class="details">
+            <h3>Luxury Villa</h3>
+            <p>$500,000</p>
+            <p>4 Beds | 3 Baths | 3500 sqft</p>
         </div>
-
-        <!-- Image Container 2 -->
-        <div class="container">
-            <img src="https://via.placeholder.com/250x150" alt="House 2">
-            <p>Modern Apartment - $300,000</p>
-        </div>
-
-        <!-- Image Container 3 -->
-        <div class="container">
-            <img src="https://via.placeholder.com/250x150" alt="House 3">
-            <p>Family Home - $250,000</p>
-        </div>
-
-        <!-- Image Container 4 -->
-        <div class="container">
-            <img src="https://via.placeholder.com/250x150" alt="House 4">
-            <p>Beach House - $750,000</p>
-        </div>
-
-        <!-- Image Container 5 -->
-        <div class="container">
-            <img src="https://via.placeholder.com/250x150" alt="House 5">
-            <p>Town House - $400,000</p>
-        </div>
-
+        <button>View Details</button>
     </div>
+
+    <div class="container">
+        <img src="https://via.placeholder.com/280x180" alt="Apartment">
+        <div class="details">
+            <h3>Modern Apartment</h3>
+            <p>$300,000</p>
+            <p>3 Beds | 2 Baths | 1800 sqft</p>
+        </div>
+        <button>View Details</button>
+    </div>
+
+    <div class="container">
+        <img src="https://via.placeholder.com/280x180" alt="Family Home">
+        <div class="details">
+            <h3>Family Home</h3>
+            <p>$250,000</p>
+            <p>3 Beds | 2 Baths | 2200 sqft</p>
+        </div>
+        <button>View Details</button>
+    </div>
+
+    <div class="container">
+        <img src="https://via.placeholder.com/280x180" alt="Beach House">
+        <div class="details">
+            <h3>Beach House</h3>
+            <p>$750,000</p>
+            <p>5 Beds | 4 Baths | 4200 sqft</p>
+        </div>
+        <button>View Details</button>
+    </div>
+
+    <div class="container">
+        <img src="https://via.placeholder.com/280x180" alt="Town House">
+        <div class="details">
+            <h3>Town House</h3>
+            <p>$400,000</p>
+            <p>4 Beds | 3 Baths | 2600 sqft</p>
+        </div>
+        <button>View Details</button>
+    </div>
+
+</section>
+
+<section class="contact">
+    <h2>Contact Us</h2>
+    <input type="text" placeholder="Your Name">
+    <br>
+    <input type="email" placeholder="Your Email">
+    <br>
+    <textarea rows="4" placeholder="Your Message"></textarea>
+    <br>
+    <button style="padding:10px 20px; background:white; color:#1f3c88; border:none;">Send Message</button> <!-- Inline CSS -->
+</section>
+
+<footer>
+    <p>© 2026 PrimeView Real Estate | All Rights Reserved</p>
+</footer>
 
 </body>
 </html>
