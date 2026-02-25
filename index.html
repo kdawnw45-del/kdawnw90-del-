@@ -1,93 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dream House Inspiration</title>
-    
-    <!-- EXTERNAL CSS LINK -->
-    <link rel="stylesheet" href="style.css">
+    <title>PrimeView Real Estate</title>
 
-    <!-- INTERNAL CSS -->
+    <!-- Internal CSS -->
     <style>
         body {
-            background-color: #f0f4f8; /* Soft blue-grey background */
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
-            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9; /* Not white */
+            text-align: center; /* Centered content */
         }
 
-        .main-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center; /* Centering content */
-            text-align: center;
+        h1 {
+            color: #1f3c88;
         }
 
-        .house-card {
-            background-color: #ffffff;
-            border-radius: 15px;
-            margin: 20px;
-            padding: 15px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            width: 80%;
-            max-width: 500px;
-        }
-
-        img {
-            width: 100%;
+        .container {
+            width: 250px;
+            background-color: white;
             border-radius: 10px;
-            height: 300px;
-            object-fit: cover;
+            margin: 20px;
+            display: inline-block;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .container img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .container p {
+            padding: 10px;
         }
     </style>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-    <div class="main-container">
-        <!-- INLINE CSS used on the H1 -->
-        <h1 style="color: #2c3e50; text-transform: uppercase; letter-spacing: 2px;">Interior Design Inspo</h1>
-        <p>Exploring the balance between comfort and style.</p>
+    <!-- Inline CSS -->
+    <h1 style="margin-top: 20px;">PrimeView Real Estate</h1>
+    <p style="color: #555;">Find Your Dream Home Today</p>
 
-        <!-- Container 1: The Kitchen -->
-        <div class="house-card">
-            <h3>Modern Marble Kitchen</h3>
-            <img src="https://www.google.com/imgres?q=modern%20dark%20marble%20kitchen&imgurl=https%3A%2F%2Fwww.decorilla.com%2Fonline-decorating%2Fwp-content%2Fuploads%2F2023%2F06%2FDark-marble-kitchen-design-ideas-by-Decorilla-1-1024x683.jpg&imgrefurl=https%3A%2F%2Fwww.decorilla.com%2Fonline-decorating%2Fall-black-marble-kitchen-design-before-after%2F&docid=RgXZt8zwKYp7yM&tbnid=mByr8NNqtThUvM&vet=12ahUKEwjrpYzk5_OSAxUW7QIHHejdAqQQnPAOegQIIxAB..i&w=1024&h=683&hcb=2&ved=2ahUKEwjrpYzk5_OSAxUW7QIHHejdAqQQnPAOegQIIxAB"Kitchen">
-            <p>Focus on clean lines and gold accents.</p>
+    <div class="main-content">
+
+        <!-- Image Container 1 -->
+        <div class="container">
+            <img src="https://via.placeholder.com/250x150" alt="House 1">
+            <p>Luxury Villa - $500,000</p>
         </div>
 
-        <!-- Container 2: The Living Room -->
-        <div class="house-card">
-            <h3>Scandi Living Space</h3>
-            <img src="https://www.pinterest.com/pin/4714774604002681/"Living Room">
-            <p>Neutral tones with cozy "Hygge" vibes.</p>
+        <!-- Image Container 2 -->
+        <div class="container">
+            <img src="https://via.placeholder.com/250x150" alt="House 2">
+            <p>Modern Apartment - $300,000</p>
         </div>
 
-        <!-- Container 3: The Bedroom -->
-        <div class="house-card">
-            <h3>Boho Retreat</h3>
-            <img src="https://www.pinterest.com/pin/12525705209273695/"Bedroom">
-            <p>Natural materials and plenty of indoor plants.</p>
+        <!-- Image Container 3 -->
+        <div class="container">
+            <img src="https://via.placeholder.com/250x150" alt="House 3">
+            <p>Family Home - $250,000</p>
         </div>
 
-        <!-- Container 4: The Home Office -->
-        <div class="house-card">
-            <h3>The Productive Nook</h3>
-            <img src="https://www.pinterest.com/pin/34832597115840332/"Office">
-            <p>Minimalist desk setup with ergonomic lighting.</p>
+        <!-- Image Container 4 -->
+        <div class="container">
+            <img src="https://via.placeholder.com/250x150" alt="House 4">
+            <p>Beach House - $750,000</p>
         </div>
 
-        <!-- Container 5: The Outdoor Deck -->
-        <div class="house-card">
-            <h3>Sunset Terrace</h3>
-            <img src="https://www.pinterest.com/pin/8162843070730342/"Patio">
-            <p>Seamless indoor-outdoor living transitions.</p>
-
-
+        <!-- Image Container 5 -->
+        <div class="container">
+            <img src="https://via.placeholder.com/250x150" alt="House 5">
+            <p>Town House - $400,000</p>
         </div>
+
     </div>
 
 </body>
 </html>
-
-
