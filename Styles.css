@@ -1,0 +1,17 @@
+.main-content {
+    width: 90%;
+    margin: auto;
+}
+
+.container:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+p {
+    font-weight: bold;
+}
+
+h1 {
+    letter-spacing: 2px;
+}
