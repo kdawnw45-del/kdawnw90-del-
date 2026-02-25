@@ -1,17 +1,19 @@
-.main-content {
-    width: 90%;
-    margin: auto;
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    transition: transform 0.3s ease;
 }
 
 .container:hover {
-    transform: scale(1.05);
-    transition: 0.3s;
+    transform: translateY(-10px);
 }
 
-p {
+button {
     font-weight: bold;
 }
 
-h1 {
-    letter-spacing: 2px;
+h2 {
+    color: #1f3c88;
 }
